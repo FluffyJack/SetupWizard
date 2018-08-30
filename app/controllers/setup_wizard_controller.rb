@@ -23,7 +23,7 @@ class SetupWizardController < UIViewController
     view.button.addTarget(self, action: 'next_step:', forControlEvents: UIControlEventTouchUpInside)
   end
 
-  def next_step(sender)
+  def next_step(_)
     @nav.pushViewController(next_controller, animated: true)
   end
 
